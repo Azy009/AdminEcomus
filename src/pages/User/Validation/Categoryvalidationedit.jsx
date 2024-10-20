@@ -15,6 +15,7 @@ export const Categoryvalidationedit = Yup.object({
     .label("Email ID")
     .min(2)
     .max(19)
+    .email()
     .required("Please Enter Email ID"),
   mobile: Yup.string()
     .label("Mobile No")

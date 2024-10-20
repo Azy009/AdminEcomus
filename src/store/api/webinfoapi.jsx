@@ -9,6 +9,30 @@ export const webinfoApi = createApi({
         method:'GET'
       })
     }),
+    countinfo: builder.query({
+      query: () => ({
+        url:'countinfo',
+        method:'GET'
+      })
+    }),
+    contactlist: builder.query({
+      query: () => ({
+        url:'contactus',
+        method:'GET'
+      })
+    }),
+    contactlistlatest: builder.query({
+      query: () => ({
+        url:'contactus10',
+        method:'GET'
+      })
+    }),
+    contactsingle: builder.query({
+      query: (id) => ({
+        url:`contactus/${id}`,
+        method:'GET'
+      })
+    }),
     patchWebinfo: builder.mutation({
       query: ({data}) => ({
         url: `websiteinfo`,
@@ -16,7 +40,13 @@ export const webinfoApi = createApi({
         body:data
       })
     }),
+    deleteContact: builder.mutation({
+      query: (id) => ({
+        url: `${id}`,
+        method:'DELETE'
+      })
+    }),
   }),
 })
 
-export const { useGetWebinfoQuery,usePatchWebinfoMutation } = webinfoApi
+export const { useGetWebinfoQuery,usePatchWebinfoMutation,useCountinfoQuery,useContactlistQuery,useDeleteContactMutation,useContactsingleQuery,useContactlistlatestQuery } = webinfoApi

@@ -30,6 +30,8 @@ import Addbrand from "./pages/Brand/Addbrand/Addbrand";
 import Editbrand from "./pages/Brand/Editbrand/Editbrand";
 import Orderlist from "./pages/Order/Listorder/Orderlist";
 import Editorder from "./pages/Order/Editorder/Editorder";
+import Contactlist from "./pages/Website_info/Listcontact/Contactlist";
+import Viewcontact from "./pages/Website_info/Editbanner/Viewcontact";
 function App() {
  
   return (
@@ -49,6 +51,7 @@ function App() {
           <Route path="/addvariant/:id" element={<AddVariant />} />
           <Route path="/editvariant/:id" element={<EditVariant />} />
           <Route path="/userlist/:id" element={<Userlist />} />
+          <Route path="/contactlist/:id" element={<Contactlist />} />
           <Route path="/brandlist/:id" element={<Brandlist />} />
           <Route path="/bannerlist/:id" element={<Bannerlist />} />
           <Route path="/categorylist/:id" element={<Categorylist />} />
@@ -61,6 +64,7 @@ function App() {
           <Route path="/editattribute/:id" element={<Editattribute />} />
           <Route path="/editorder/:id" element={<Editorder />} />
           <Route path="/addcategory" element={<Addcategory />} />
+          <Route path="/viewcontactform/:id" element={<Viewcontact />} />
           <Route path="/addbanner" element={<Addbanner />} />
           <Route path="/addbrand" element={<Addbrand />} />
           <Route path="/addattribute" element={<Addattribute />} />

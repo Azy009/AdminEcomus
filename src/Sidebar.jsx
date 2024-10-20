@@ -52,11 +52,7 @@ const Sidebarmenu = ({ children }) => {
     location.pathname.lastIndexOf("/")
   );
   const desiredString = location.pathname.split("/").slice(0, 2).join("/");
-  if (
-    location.pathname === "/" ||
-    desiredString === "/forgetpassword" ||
-    location.pathname === "/resetpassword"
-  ) {
+  if (location.pathname === "/") {
     return (
       <div
         style={{
@@ -257,7 +253,7 @@ const Sidebarmenu = ({ children }) => {
                   Brand 
                 </MenuItem>
               </NavLink>
-              <NavLink
+              {/* <NavLink
                className={
                 result === "/webinfo"
                   ? "nav active"
@@ -272,23 +268,39 @@ const Sidebarmenu = ({ children }) => {
                   {" "}
                   Webinfo 
                 </MenuItem>
-              </NavLink>
+              </NavLink> */}
 
 
-              {/* <SubMenu
+              <SubMenu
                 title="Submenu 1"
                 key="submenu1"
                 open={openSubMenu === "submenu1"}
                 onClick={() => handleSubMenuClick("submenu1")}
-                icon={<img style={{width:"36px"}} src={img8} alt="qwerct" />}
-                label="Checking"
+                icon={<img style={{width:"36px"}} src={img13} alt="qwerct" />}
+                label="Webinfo"
               >
+             
                 <NavLink
-                  to="/checkcustomerlist/0"
+                  to="/webinfo"
                   className={
-                    location.pathname === "/checkcustomerlist" ||
-                    result === "/checkeditcustomer" ||
-                    result === "/checkcustomerdetail"
+                    location.pathname === "/webinfo" ? "nav active"
+                      : "nav"
+                  }
+                >
+                  <MenuItem
+                    style={{ paddingLeft: hideimg == true ? "72px" : "30px" }}
+                  >
+                    {" "}
+                    Web Detail
+                  </MenuItem>
+                </NavLink>
+             
+                <NavLink
+                  to="/contactlist/0"
+                  className={
+                    location.pathname === "/contactlist" ||
+                    result === "/contactlist" ||
+                    result === "/contactlist"
                       ? "nav active"
                       : "nav"
                   }
@@ -297,44 +309,10 @@ const Sidebarmenu = ({ children }) => {
                     style={{ paddingLeft: hideimg == true ? "72px" : "30px" }}
                   >
                     {" "}
-                    Customer
+                    Contact Us
                   </MenuItem>
                 </NavLink>
-                <NavLink
-                  to="/checkagentlist/0"
-                  className={
-                    location.pathname === "/checkagentlist/0" ||
-                    result === "/checkagentdetail" ||
-                    result === "/checkeditagent"
-                      ? "nav active"
-                      : "nav"
-                  }
-                >
-                  <MenuItem
-                    style={{ paddingLeft: hideimg == true ? "72px" : "30px" }}
-                  >
-                    {" "}
-                    Agent
-                  </MenuItem>
-                </NavLink>
-                <NavLink
-                  to="/checkremittancelist/0"
-                  className={
-                    location.pathname === "/checkremittancelist/0" ||
-                    result === "/checkeditremittance" ||
-                    result === "/checkremittancedetail"
-                      ? "nav active"
-                      : "nav"
-                  }
-                >
-                  <MenuItem
-                    style={{ paddingLeft: hideimg == true ? "72px" : "30px" }}
-                  >
-                    {" "}
-                    Remittance
-                  </MenuItem>
-                </NavLink>
-              </SubMenu> */}
+              </SubMenu>
 
               <NavLink to="/" onClick={logoutevt} className="nav">
                 <MenuItem

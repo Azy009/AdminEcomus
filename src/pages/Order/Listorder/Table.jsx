@@ -103,34 +103,42 @@ const Table = () => {
   // fetch all category api start here
   const { data: orderData, isLoading } = useGetAllOrderQuery();
   useEffect(() => {
-    if (orderData) {
+    if (isLoading == false) {
       async function fetchData() {
         setloading(true);
         try {
+
+          console.log("data number 3",orderData)
           const dataWithSerialNumbers = orderData.data.map((row, index) => ({
             ...row,
             serialNo: index + 1,
             id: index + 1,
-            fullname: `${row.user_id.first_name} ${row.user_id.last_name}`,
-            contact: row.user_id.mobile,
+            fullname: row.user_id == null ? 'undefined' : `${row?.user_id?.first_name} ${row?.user_id?.last_name}`,
+            contact: row.user_id == null ? 'undefined' : row?.user_id?.mobile,
             formatdate:new Date(row.createdAt.split('Time')[0]).toLocaleDateString('en-GB', {
               hour: 'numeric',
               minute: 'numeric'
             })
           }));
+          console.log("data number 4",dataWithSerialNumbers)
+          console.log("data number 5",orderData)
           setData(dataWithSerialNumbers);
           setloading(false);
         } catch (error) {
           setloading(false);
         }
       }
+      console.log("check data 2",orderData)
       fetchData();
+
     }
-  }, [orderData]);
+
+    console.log("check data 1",orderData)
+  }, [orderData,isLoading]);
   // fetch all category api start here
 
   return (
-    <div
+    isLoading == false ? <div
       className="row bg-white pb-4 rounded-bottom table-responsive"
       style={{ paddingBottom: "7rem" }}
     >
@@ -189,7 +197,7 @@ const Table = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div> : ''
   );
 };
 

@@ -18,10 +18,10 @@ const Breadcupdash = ({ name }) => {
             className="form-select"
             aria-label="Default select example"
           >
-            <option value="ytrewq">Western Union</option>
-            <option value="qwerty">qwerty</option>
-            <option value="zxcvb">zxcvb</option>
-            <option value="bvcxz">bvcxz</option>
+            <option value="ytrewq">Customer</option>
+            <option value="qwerty">Order</option>
+            <option value="zxcvb">Cart</option>
+            <option value="bvcxz">Wishlist</option>
           </select>
         </div>
         <div className="_width_20 addnew">

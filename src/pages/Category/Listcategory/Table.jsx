@@ -40,7 +40,7 @@ const Table = () => {
     // },
     { field: "parentcategory", headerName: "Category Type", flex: 0.7,renderCell: ({ row: { parentcategory } }) => {
       return (
-          parentcategory[0] ? "Main Category" : "Sub Category"
+          parentcategory[0] ? "Sub Category" : "Main Category"
       );
     }, },
     { field: "formatdate", headerName: "Created Date & Time", flex: 0.6 },

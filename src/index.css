@@ -37,7 +37,7 @@ html{
   }
 }
 .printbtn {
-  background-color:#230bb3; /* Green background color */
+  background-color:#059fe2; /* Green background color */
   color: white; /* White text color */
   padding: 10px 20px; /* Padding for the button */
   font-size: 16px; /* Font size */
@@ -94,7 +94,7 @@ html{
 
 
 :root {
-  --primary: #059fe2;
+  --primary: #3c8dbc;
   /* --secondary:#154492; */
 }
 
@@ -239,7 +239,7 @@ height: 35px !important;
 }
 
 .MuiDataGrid-footerContainer{
-  background: #059fe2;
+  background: #3c8dbc;
 }
 
 .css-axafay-MuiDataGrid-virtualScroller {
@@ -257,7 +257,7 @@ height: 35px !important;
   font-weight: bold;
 }
 .MuiDataGrid-toolbarContainer{
-  background: #059fe2;
+  background: #3c8dbc;
 }
 .MuiDataGrid-toolbarContainer button{
   color: white;
@@ -267,7 +267,7 @@ height: 35px !important;
 }
 
 .MuiDataGrid-main{
-  border: 1px solid #059fe2;
+  border: 1px solid #3c8dbc;
 }
 
 
@@ -292,19 +292,19 @@ body {
     overflow:hidden;
   }
   #root > div > div > aside > div > div > nav.ps-menu-root.nothover.abc.css-vj11vy > ul > li > a > span.ps-menu-icon.css-wx7wi4 > svg{
-    color:#059fe2 !important;
+    color:#3c8dbc !important;
   }
   #\:0\.targetLanguage > img{
     display: none;
   }
 
   a > svg{
-    color: #059fe2 !important;
+    color: #3c8dbc !important;
   }
 #root > div > div > div > div.header > div:nth-child(2) > div.icongroup > div:nth-child(2) > video{
   width: 2px !important;
   height: 7px !important;
-  background: #059fe2;
+  background: #3c8dbc;
   position: absolute;
   top: -45455px;
 }
@@ -977,7 +977,7 @@ video{
   width: 160px;
   /* letter-spacing: 1px; */
   display: inline-flex;
-  background-color: #059fe2;
+  background-color: #3c8dbc;
   align-items: center;
   justify-content: center;
   -ms-flex-pack: center;
@@ -1044,8 +1044,8 @@ video{
 }
 
 .sec-center .section-dropdown {
-  width: 16vw;
-  margin-left: -34px;
+  width: 15vw;
+  margin-left: -115px;
   background-color: #fff;
   box-shadow: 0 14px 35px 0 rgba(9, 9, 12, 0.15);
 }
@@ -1242,12 +1242,12 @@ video{
 }
 
 .account {
-  color: #059fe2;
+  color: #3c8dbc;
 }
 
 .acc {
   font-size: 12px;
-  color: #059fe2;
+  color: #3c8dbc;
 }
 
 p {
@@ -1450,7 +1450,7 @@ body {
   width: 100%;
   display: flex;
   /* background: linear-gradient(to right, rgba(12, 83, 152, 1), rgba(18, 113, 205, 1)); */
-  background: #059fe2;
+  background: #3c8dbc;
   justify-content: flex-end;
   align-items: center;
   gap: 13px;
@@ -1535,8 +1535,8 @@ body {
   background: linear-gradient(to top,
       white 0%,
       white 50%,
-      #059fe2 50%,
-      #059fe2 100%);
+      #3c8dbc 50%,
+      #3c8dbc 100%);
 }
 
 .btn3 {
@@ -1545,7 +1545,7 @@ body {
   background-color: #aec9df;
   border-radius: 10px;
   font-weight: 600;
-  color: #059fe2;
+  color: #3c8dbc;
 }
 
 .btn4 {
@@ -1560,7 +1560,7 @@ body {
 .btn5 {
   padding: 4px 20px;
   border: 0px;
-  background-color: #059fe2 !important;
+  background-color: #3c8dbc !important;
   border-radius: 18px;
   font-weight: 600;
   color: white;
@@ -1570,7 +1570,7 @@ body {
   padding: 4px 20px;
   background-color: #fff;
   font-weight: 600;
-  color: #059fe2;
+  color: #3c8dbc;
   border: 2px solid gainsboro;
   border-radius: 0.4em;
   box-shadow: 0.1em;
@@ -1604,11 +1604,11 @@ body {
 }
 
 .closebtn {
-  background: #059fe2 !important;
+  background: #3c8dbc !important;
 }
 
 .ccedit-h {
-  color: #059fe2;
+  color: #3c8dbc;
   font-size: 30px;
   font-weight: 700;
   text-align: center;
@@ -1661,14 +1661,14 @@ body {
 }
 
 .customcolor2 {
-  background-color: #059fe2 !important;
+  background-color: #3c8dbc !important;
   color: #fff;
 }
 
 .customfont {
   font-size: 20px;
   font-weight: 700;
-  color: #059fe2;
+  color: #3c8dbc;
 }
 
 th {
@@ -1700,15 +1700,17 @@ td {
 }
 
 /* a:hover{
-  color: #059fe2 !important;
+  color: #3c8dbc !important;
 } */
 .nothover:hover > a span{
-  color: #059fe2 !important;
+  color: #3c8dbc !important;
 }
 .active>li {
-  background-color: #85d0f3 !important;
-  color: #059fe2;
-  border-right: 4px solid #059fe2;
+  background-color: #d0ebf8 !important;
+  color: #fff;
+  /* color: #3c8dbc; */
+  font-weight: 600;
+  border-right: 4px solid #3c8dbc;
 }
 
 .created {
@@ -1836,7 +1838,7 @@ td {
 
 .customdesgi {
   font-size: 15px;
-  color: #059fe2;
+  color: #3c8dbc;
   font-weight: 700;
 }
 

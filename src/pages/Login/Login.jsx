@@ -1,5 +1,6 @@
 import React from 'react'
-import img23 from '../../assets/loginlogo.png';
+// import img23 from '../../assets/loginlogo.png';
+import img23 from "../../assets/Ecomus.svg";
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { gettoken, tokenstore } from '../../Localstorage/Store';
@@ -33,7 +34,7 @@ const Login = () => {
     const response = await axios.post(url, formdata);
     console.log("login response",response)
     if(response.data.status == "successfull"){
-      tokenstore(response.data.token);
+      tokenstore(response.data);
       nvg('/dashboard')
     }
     setloading(false)

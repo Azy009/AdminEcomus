@@ -17,7 +17,7 @@ const EditProduct = () => {
                 color: "#0C5398",
               }}
             >
-              <p className="m-0 customfont">Edit Category</p>
+              <p className="m-0 customfont">Edit Product</p>
               <div className="addnew d-block mb-2">
                 <button className="btn text-white closebtn">
                   <NavLink

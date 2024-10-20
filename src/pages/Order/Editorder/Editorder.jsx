@@ -123,7 +123,7 @@ setTimeout(() => {
                           {/* ... (Other table rows) */}
                           <tr>
                             <td width="20%" valign="top" style={{ padding: '8px 6px', fontFamily: 'Arial, Helvetica, sans-serif', fontSize: '12px',display:'flex',justifyContent:'space-between' }}>
-                              <strong>Sub Total :</strong> {orderdetail.data.sub_total_amount} INR
+                              <strong>Sub Total :</strong> {orderdetail.data.sub_total_amount - orderdetail.data.shipping_charges} INR
                             </td>
                           </tr>
                           
